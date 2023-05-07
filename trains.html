@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyay | Train</title>
+    <link rel="icon" href="img/main/logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary w-100 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold ms-md-5 fs-2" href="index.html">Pyay City Guide</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="world-heritage.html">World Heritage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagodas.html">Pagoda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hotels.html">Hotel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hospitals.html">Hospital</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="university.html">University</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Transporation
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="cars.html">Bus</a></li>
+              <li><a class="dropdown-item active" href="trains.html">Train</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Emergency
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="fire-station.html">Fire Station</a></li>
+              <li><a class="dropdown-item" href="police-station.html">Police Station</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <button class="top-btn shadow"><i class="fa-solid fa-arrow-up"></i></button>
+  <section class="train-blk">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <table class="table">
+            <thead>
+              <th>Name</th>
+              <th>From - To</th>
+              <th>Time</th>
+            </thead>
+            <tbody id="search">
+              <tr>
+                <td>64 အစုန် စာပို့ </td>
+                <td>ပြည် - ကြည့်မြင်တိုင်</td>
+                <td>11:30 pm</td>
+              </tr>
+              <tr>
+                <td>71 အဆန် အမြန် </td>
+                <td>ရန်ကုန် - ပြည် </td>
+                <td>8:45 pm</td>
+              </tr>
+              <tr>
+                <td>72 အစုန် အမြန်</td>
+                <td>ပြည် - ရန်ကုန်</td>
+                <td>10:30 pm</td>
+              </tr>
+              <tr>
+                <td>109 အဆန် အမြန်</td>
+                <td>နေပြည်တော် - ပြည်</td>
+                <td>5:30 pm</td>
+              </tr>
+              <tr>
+                <td>110 အစုန် အမြန်</td>
+                <td>ပြည် - နေပြည်တော်</td>
+                <td>6:30 am</td>
+              </tr>
+              <tr>
+                <td>609 အဆန် ကားရထား</td>
+                <td>လက်ပံတန်း - ပြည်</td>
+                <td>11:00 am</td>
+              </tr>
+              <tr>
+                <td>610 အစုန် ကားရထား</td>
+                <td>ပြည် - လက်ပံတန်း</td>
+                <td>01:00 pm</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center bg-primary py-3">
+    <small class="text-light">Copyright &copy; 2022 <strong><i>Myat Sandar Aung ,</i></strong> All Rights Reserve.</small>
+  </footer>
+    <script src="vendor/jquery-3.6.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/fontawesome/js/all.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      let screenHeight = window.innerHeight - 198;
+      const train = document.querySelector('.train-blk');
+      train.style.height = screenHeight+"px";
+    </script>
+</body>
+</html>
+
+
+
